@@ -1,5 +1,3 @@
-<link rel="icon" href="favicon.svg" type="image/svg+xml" />
-
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -474,10 +472,7 @@
         return;
       }
 
-     if (!OPENAI_API_KEY) {
-  alert("코드 상단에 OPENAI_API_KEY를 설정해주세요.");
-  return;
-}
+
 
       runButton.disabled = true;
       runButton.textContent = "생성 중...";
@@ -609,6 +604,7 @@ ${inputText}
 
 </body>
 </html>
+
 
 
 
