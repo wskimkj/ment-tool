@@ -474,10 +474,10 @@
         return;
       }
 
-      if (!OPENAI_API_KEY || OPENAI_API_KEY === "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") {
-        alert("코드 상단에 OPENAI_API_KEY를 설정해주세요.");
-        return;
-      }
+     if (!OPENAI_API_KEY) {
+  alert("코드 상단에 OPENAI_API_KEY를 설정해주세요.");
+  return;
+}
 
       runButton.disabled = true;
       runButton.textContent = "생성 중...";
@@ -609,6 +609,7 @@ ${inputText}
 
 </body>
 </html>
+
 
 
 
