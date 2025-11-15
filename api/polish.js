@@ -14,6 +14,7 @@ module.exports = async function handler(req, res) {
 
     const client = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY
+      console.log(process.env.OPENAI_API_KEY);
     });
 
     const response = await client.chat.completions.create({
